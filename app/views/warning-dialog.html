@@ -1,0 +1,9 @@
+<div class="modal-header">
+    <h3>You're Idle. Do Something!</h3>
+</div>
+<div class="modal-body" ng-idle-countdown="countdown" ng-init="countdown=countdownTime">
+    <!--<p>You'll be logged out in <span class="label label-warning">{{countdown}}</span> <span ng-pluralize="" count="countdown" when="{'one': 'second', 'other': 'seconds' }"></span>.</p>-->
+    <p>You'll be logged out in <span class="label label-warning">{{countdown}}</span> .</p>
+    <progressbar max="max" value="countdown" animate="true" class="progress-striped active" type="warning"></progressbar>
+    <button class="btn btn-success" ng-click="restart()">Continue session</button>
+</div>
